@@ -1,0 +1,314 @@
+```html
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>RASPORED 3. GODINA</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #eaf2f8;
+            color: #243447;
+        }
+
+        h1 {
+            text-align: center;
+            color: #163b63;
+            margin-bottom: 30px;
+        }
+
+        .tabela-container {
+            width: 100%;
+            overflow-x: auto;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        table {
+            width: 100%;
+            min-width: 750px;
+            border-collapse: collapse;
+            table-layout: fixed;
+            background-color: #f8fcff;
+            border: 2px solid #244c70;
+        }
+
+        th {
+            background-color: #163b63;
+            color: white;
+            padding: 18px 8px;
+            font-size: 16px;
+            border: 1px solid #8eabc4;
+        }
+
+        td {
+            border: 1px solid #8eabc4;
+            padding: 14px 8px;
+            text-align: center;
+            vertical-align: middle;
+            font-size: 14px;
+            height: 55px;
+        }
+
+        /* Kolona sa satnicom */
+        th:first-child {
+            width: 145px;
+        }
+
+        td:first-child {
+            background-color: #d5e8f7;
+            color: #163b63;
+            font-weight: bold;
+            white-space: nowrap;
+        }
+
+        /* Naizmjenične boje redova */
+        tbody tr:nth-child(even) td:not(:first-child) {
+            background-color: #e8f4fc;
+        }
+
+        /* Predmeti */
+        td:not(:first-child) {
+            font-weight: 500;
+        }
+
+        /* Pauza */
+        .pauza {
+            background-color: #fff0d9 !important;
+            color: #80551b;
+            font-weight: bold;
+        }
+
+        /* Hover efekat */
+        td:hover {
+            filter: brightness(0.96);
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 12px;
+            }
+
+            h1 {
+                font-size: 22px;
+            }
+
+            th {
+                padding: 12px 5px;
+                font-size: 13px;
+            }
+
+            td {
+                padding: 10px 5px;
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>RASPORED ČASOVA – 3. GODINA</h1>
+
+    <main>
+        <div class="tabela-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>SATNICA</th>
+                        <th>PON</th>
+                        <th>UTO</th>
+                        <th>SRI</th>
+                        <th>ČET</th>
+                        <th>PET</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>09:00–09:30</td>
+                        <td class="pauza">PAUZA</td>
+                        <td rowspan="2">OOI (p)</td>
+                        <td rowspan="2">WT (p)</td>
+                        <td rowspan="2">RG (p)</td>
+                        <td rowspan="2">PJP (p)</td>
+                    </tr>
+
+                    <tr>
+                        <td>09:30–10:00</td>
+                        <td class="pauza">PAUZA</td>
+                    </tr>
+
+                    <tr>
+                        <td>10:00–10:30</td>
+                        <td class="pauza">PAUZA</td>
+                        <td rowspan="2">OOI (p)</td>
+                        <td rowspan="2">WT (p)</td>
+                        <td rowspan="2">RG (p)</td>
+                        <td rowspan="2">PJP (p)</td>
+                    </tr>
+
+                    <tr>
+                        <td>10:30–11:00</td>
+                        <td class="pauza">PAUZA</td>
+                    </tr>
+
+                    <tr>
+                        <td>11:00–11:30</td>
+                        <td class="pauza">PAUZA</td>
+                        <td rowspan="2">OOI (p)</td>
+                        <td rowspan="2">WT (p)</td>
+                        <td rowspan="2"></td>
+                        <td rowspan="2">PJP (p)</td>
+                    </tr>
+
+                    <tr>
+                        <td>11:30–12:00</td>
+                        <td class="pauza">PAUZA</td>
+                    </tr>
+
+                    <tr>
+                        <td>12:00–12:30</td>
+                        <td class="pauza">PAUZA</td>
+                        <td rowspan="2">RG (l)</td>
+                        <td rowspan="2">OOI (l)</td>
+                        <td rowspan="2">VVS (p)</td>
+                        <td rowspan="2">RG (t)</td>
+                    </tr>
+
+                    <tr>
+                        <td>12:30–13:00</td>
+                        <td class="pauza">PAUZA</td>
+                    </tr>
+
+                    <tr>
+                        <td>13:00–13:30</td>
+                        <td class="pauza">PAUZA</td>
+                        <td rowspan="2">RG (l)</td>
+                        <td>OOI (l)</td>
+                        <td rowspan="2">VVS (p)</td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>13:30–14:00</td>
+                        <td class="pauza">PAUZA</td>
+                        <td class="pauza">PAUZA</td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>14:00–14:30</td>
+                        <td class="pauza">PAUZA</td>
+                        <td rowspan="2" class="pauza">PAUZA</td>
+                        <td rowspan="2">PJP (l)</td>
+                        <td rowspan="2">VVS (p)</td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>14:30–15:00</td>
+                        <td class="pauza">PAUZA</td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>15:00–15:30</td>
+                        <td class="pauza">PAUZA</td>
+                        <td rowspan="2">OIS (p)</td>
+                        <td rowspan="2">WT (l)</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>15:30–16:00</td>
+                        <td class="pauza">PAUZA</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>16:00–16:30</td>
+                        <td class="pauza">PAUZA</td>
+                        <td rowspan="2">OIS (p)</td>
+                        <td>WT (l)</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>16:30–17:00</td>
+                        <td class="pauza">PAUZA</td>
+                        <td>VVS (l)</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>17:00–17:30</td>
+                        <td class="pauza">PAUZA</td>
+                        <td rowspan="2">OIS (t)</td>
+                        <td>VVS (l)</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>17:30–18:00</td>
+                        <td class="pauza">PAUZA</td>
+                        <td>VVS (l)</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>18:00–18:30</td>
+                        <td class="pauza">PAUZA</td>
+                        <td rowspan="2">OIS (t)</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>18:30–19:00</td>
+                        <td class="pauza">PAUZA</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>19:00–19:30</td>
+                        <td class="pauza">PAUZA</td>
+                        <td rowspan="2">OIS (t)</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <td>19:30–20:00</td>
+                        <td class="pauza">PAUZA</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+</body>
+</html>
+```

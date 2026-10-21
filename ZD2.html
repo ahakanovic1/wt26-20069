@@ -1,0 +1,302 @@
+```html
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Anketa o upotrebi tehnologije</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 25px;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #10243e;
+            color: #172b46;
+        }
+
+        header {
+            text-align: center;
+            background-color: #d9efff;
+            padding: 25px;
+            margin: 0 auto 25px;
+            max-width: 900px;
+            border-radius: 15px;
+            border: 1px solid #b6dcf5;
+        }
+
+        h1 {
+            margin: 0;
+            color: #163b63;
+            font-size: 28px;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        section {
+            background-color: #e8f5ff;
+            padding: 25px;
+            margin-bottom: 22px;
+            border-radius: 14px;
+            border: 1px solid #c4e2f7;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+        }
+
+        h2 {
+            margin-top: 0;
+            margin-bottom: 20px;
+            color: #194b78;
+            font-size: 21px;
+        }
+
+        p {
+            line-height: 1.6;
+            font-size: 20px;
+            font-weight: bold;
+            color: #194b78;
+            font-size: 21px;
+        }
+
+        .spol,
+        .dob,
+        .case1,
+        .case2,
+        .case3,
+        .uredjaji {
+            padding: 10px 0;
+        }
+
+        .spol p,
+        .dob p {
+            font-weight: bold;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            accent-color: #287bb5;
+            cursor: pointer;
+        }
+
+        label {
+            margin-right: 10px;
+            cursor: pointer;
+        }
+
+        select,
+        input[type="text"] {
+            padding: 10px 12px;
+            margin-top: 8px;
+            border: 1px solid #a5c9e5;
+            border-radius: 7px;
+            background-color: #f8fcff;
+            color: #172b46;
+            font-size: 15px;
+        }
+
+        select {
+            min-width: 180px;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            max-width: 350px;
+        }
+
+        select:focus,
+        input[type="text"]:focus {
+            outline: 2px solid #76b9e8;
+            border-color: #287bb5;
+        }
+
+        .uredjaji label {
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        #dugme {
+        display: block;
+        width: 200px;
+        padding: 15px;
+        margin: 25px auto;
+        border-radius: 8px;
+        background-color: #d9efff;
+        color: #194b78;
+        border: 1px solid #a5c9e5;
+        font-size: 17px;
+        font-weight: bold;
+        cursor: pointer;
+        text-align: center;
+        }
+        @media (max-width: 600px) {
+            body {
+                padding: 12px;
+            }
+
+            header,
+            section {
+                padding: 18px;
+            }
+
+            h1 {
+                font-size: 22px;
+            }
+
+            h2 {
+                font-size: 19px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>ANKETA O UPOTREBI TEHNOLOGIJE U BiH</h1>
+    </header>
+
+    <main>
+
+        <section>
+            <div class="podaci">
+                <h2>Osnovni podaci ispitanika</h2>
+
+                <form>
+                    <div class="spol">
+                        <p>Spol:</p>
+
+                        <select name="spol" id="spol" required>
+                            <option value="" selected disabled>
+                                Izaberite spol
+                            </option>
+                            <option value="muski">Muški</option>
+                            <option value="zenski">Ženski</option>
+                        </select>
+                    </div>
+
+                    <div class="dob">
+                        <p>Životna dob ispitanika:</p>
+
+                        <input type="radio" id="do25" name="dob"
+                               value="10-25" required>
+                        <label for="do25">10–25</label>
+
+                        <input type="radio" id="do45" name="dob"
+                               value="25-45">
+                        <label for="do45">25–45</label>
+
+                        <input type="radio" id="do65" name="dob"
+                               value="45-65">
+                        <label for="do65">45–65</label>
+
+                        <input type="radio" id="do85" name="dob"
+                               value="65-85">
+                        <label for="do85">65–85</label>
+
+                        <input type="radio" id="do100" name="dob"
+                               value="85-100">
+                        <label for="do100">85–100</label>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section>
+            <div class="case1">
+                <p>
+                    Koliko mislite da ste ovisni o modernim tehnologijama?
+                    (0–5, gdje je 0 = jako malo, a 5 = jako puno)
+                </p>
+
+                <label for="ovisnost">Odgovor:</label>
+                <select id="ovisnost" name="ovisnost" required>
+                    <option value="" selected disabled>Izaberite ocjenu</option>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+        </section>
+
+        <section>
+            <div class="case2">
+                <p>
+                    Koliko tehnologija olakšava vaše svakodnevne aktivnosti
+                    i potrebe? (0–5, gdje je 0 = jako malo, a 5 = jako puno)
+                </p>
+
+                <label for="posao">Odgovor:</label>
+                <select id="posao" name="posao" required>
+                    <option value="" selected disabled>Izaberite ocjenu</option>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+        </section>
+
+        <section>
+            <div class="case3">
+                <p>
+                    Koliko ste imali dodira s novim tehnologijama,
+                    kao što je umjetna inteligencija (AI)?
+                    (0–5, gdje je 0 = nikako, a 5 = veoma mnogo)
+                </p>
+
+                <label for="AI">Odgovor:</label>
+                <select id="AI" name="AI" required>
+                    <option value="" selected disabled>Izaberite ocjenu</option>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+        </section>
+
+        <section>
+            <div class="uredjaji">
+                <h2>Koje tehnološke uređaje posjedujete?</h2>
+
+                <input type="checkbox" id="mobitel" name="uredjaji"
+                       value="mobitel">
+                <label for="mobitel">Mobitel</label>
+
+                <input type="checkbox" id="laptop" name="uredjaji"
+                       value="laptop">
+                <label for="laptop">Laptop</label>
+
+                <input type="checkbox" id="tablet" name="uredjaji"
+                       value="tablet">
+                <label for="tablet">Tablet</label>
+
+                <input type="checkbox" id="ostalo" name="uredjaji"
+                       value="ostalo">
+                <label for="ostalo">Ostalo</label>
+            </div>
+        </section>
+
+        <div>
+            <input id="dugme" type="submit" value="Submit">
+        </div>
+
+    </main>
+
+</body>
+</html>
+```

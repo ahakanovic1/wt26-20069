@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="bs">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nurburing Racing Weekend</title>
+        <style>
+            body{
+                margin: 0;
+                font-family: Arial, Helvetica, sans-serif;
+                background-color: #101214;
+                color: white;
+                position: relative;
+                min-height: 100vh;
+            }
+
+            .zaglavlje{
+                text-align: center;
+                padding: 30px;
+                background-color: #B71C1C;
+            }
+            
+            main {
+                width: 85%;
+                max-width: 1000px;
+                margin: 25px auto;
+            }
+
+            section{
+                background-color: #1C1F22;
+                padding: 25px;
+                margin-bottom: 25px;
+                border-radius: 8px;
+            }
+
+            h2{
+                color: #FF5252;
+            }
+
+            #slika1{
+                width: 100%;
+                max-height: 400px;
+                object-fit: cover;
+                border-radius: 8px;
+            }
+
+            a{
+                color: #FF5252;
+            }
+
+            input[type="text"],
+            input[type="email"],
+            select{
+                width: 100%;
+                padding: 10px;
+                margin-top: 6px;
+                margin-bottom: 10px;
+                box-sizing: border-box;
+                background-color: #101214;
+                color: white;
+                border: 1px solid #555;
+                border-radius: 4px;
+            }
+            
+            input[type="radio"],
+            input[type="checkbox"] {
+                accent-color: #e53935;
+                margin-right: 5px;
+            }
+
+            input[type="submit"] {
+                background-color: #b71c1c;
+                color: white;
+                padding: 12px 25px;
+                border: none;
+                cursor: pointer;
+                display:block;
+                margin: 15px auto 0;
+                font-size: 16px;
+                border-radius: 4px;
+                alignment-baseline: center;
+            }
+
+            input[type="submit"]:hover {
+                background-color: #7f0000;
+            }
+
+            footer {
+                background-color: #090a0b;
+                color: white;
+                text-align: center;
+                padding: 20px;
+            }
+
+            .lista li{
+                padding: 3px;
+            }
+            .spol {
+                display: flex;
+                align-items: center;
+                gap: 5px;
+            }
+            .tip_utrke{
+                padding-bottom: 11px;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <header class="zaglavlje">
+        <h1>Nurburing Racing Weekend <br>Brzina i adrenalin! </h1>
+        </header>
+
+        <main>
+            <section>
+            <h2>Pridruzi nam se na trkačkom vikendu!</h2>
+
+            <p>
+                Pozivamo sve punoljetne osobe da se prijave na 
+                trkački vikend na poznatoj stazi Nurburing u Njemačkoj.
+                Očekuju vas uzbudljive utrke, snažna vozila i 
+                nezaboravna atmosfera.
+            </p>
+
+            <p>
+                Bez obzira na to da li ste ljubitelj autmobila ili 
+                motocikala, ovaj događaj pruža priliku da doživite 
+                svijet motosporta izbliza.
+            </p>
+
+            <img
+                id="slika1" 
+                src="https://inmotion-photos.com/wp-content/uploads/2024/01/Nurburgring_Nordschleife_overview.jpg"
+                 alt="Trkača staza Nurburing u Njemačkoj"
+            />
+
+            <p><strong>Lokacija: </strong> Nurburing, Njemačka</p>
+            <p><strong>Datum događaja: </strong> 18.11.2026, 15:00h</p>
+            <p><strong>Uslov: </strong> Prijaviti se mogu samo punoljetne osobe</p>
+            
+            <p>Više informacija o stazi mžete pronaći na <a href="https://www.nuerburgring.de/en/" target="_blank"></a>
+                službenoj stranici Nurburinga.</p>
+            
+            </section>
+
+            <section class="lista">
+                <h2>Izaberite svoju utrku</h2>
+
+                <p>U ponudi su sljedeće kategorije: </p>
+                
+                <ul>
+                    <li>GT - utrke sportskih automobila</li>
+                    <li>Hypercar - utrke vrhunskih hiperautomobila</li>
+                    <li>MotoGP - motociklističke utrke</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Prijavni obrazac za najbrže</h2>
+
+                <p>
+                    Popunite podatke ispod kako biste iskazali interes
+                    za učešće na Nurburing Racing Weekendu.
+                </p>
+
+                <form>
+                    <div class="imeIprezime">
+                        <label for="ime">Ime i prezime: </label>
+                        <input 
+                            type="text" 
+                            id="ime" 
+                            name="ime" 
+                            placeholder="Unesite Ime i prezime" 
+                            required
+                        ><br>
+                    </div>
+
+                    
+                    <div class="spol">
+                        <p>Spol:</p>
+
+                        <input type="radio" id="muski" name="spol" value="muski">
+                        <label for="muski">Muški</label>
+
+                        <input type="radio" id="zenski" name="spol" value="zenski">
+                        <label for="zenski">Ženski</label>
+                    </div>
+
+                    <div class="mail">
+                        <label for="eamil">E-mail adresa:</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="korisnik@gmail.com"
+                            required
+                        ><br>
+                    </div>
+
+                    <div class="tip_utrke">
+                        <p><strong>Odaberite tip utrke: </strong></p>
+                        <input
+                            type="radio"
+                            id="gt"
+                            name="tip_utrke"
+                            value="GT"
+                            required    
+                        >
+                        <label for="gt">GT</label><br>
+                    
+                    
+                        <input
+                            type="radio"
+                            id="moto"
+                            name="tip_utrke"
+                            value="MOTO"   
+                        >
+                        <label for="moto">MOTO</label><br>
+
+                        <input
+                            type="radio"
+                            id="HyperCar"
+                            name="tip_utrke"
+                            value="HyperCar"  
+                        >
+                        <label for="HyperCar">HyperCar</label>
+                        <br>
+                    </div>
+                    <label for="iskustvo"> 
+                        Da li ste ranije učestvovali na utrkama?
+                    </label><br>
+
+                    <select id="iskustvo" name="iskustvo" required>
+                        <option value="" selected disabled>
+                            Izaberite odgovor
+                        </option>
+                        <option value="da">Da,imam iskustvo</option>
+                        <option value="ne">Ne, ovo je moje prvo trkače iskustvo</option>
+                    </select><br>
+
+                    <input
+                        type="checkbox"
+                        id="punoljetnost"
+                        name="punoljetnost"
+                        value="punoljetnost"
+                        required
+                    >
+                    <label for="punoljetnost">
+                        Potvrđujem da imam najmanje 18 godina.
+                    </label><br>
+
+                    <input type="submit" value="Prijavi se">
+
+
+                </form>
+            </section>
+
+        </main>
+        
+        <footer>
+            <p>Nurburing Racing Weekend</p>
+            <p>Doživi brzinu. Osjeti adrenalin.</p>
+            <p>Informacije o događaju <a 
+                href="https://www.nuerburgring.de/en/"
+                target="_blank"
+                ></a> Nurburing</p>
+        </footer>
+    </body>
+
+</html>
