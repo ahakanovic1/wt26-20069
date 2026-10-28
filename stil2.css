@@ -1,0 +1,67 @@
+#zaglavlje{
+    background-color: rgb(196, 39, 39);
+    margin: 0;
+    padding: 20px;
+}
+#naslov{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 42pt;
+    text-align: center;
+    color :#feecef;
+}
+
+#zaglavlje h2{
+    color: #feecef;
+    text-align: center;
+}
+
+#meni{
+    background-color: #feecef;
+}
+
+#meni ul {
+    list-style-type: circle;
+    padding: 10px;
+    margin: 0;
+    display: flex;
+}
+
+#meni li{
+    flex: 1;
+    text-align: center;
+    display: inline;
+}
+
+.link {
+    display: inline-block;
+    padding: 12px;
+    color: rgb(86, 86, 192);
+    text-align: center;
+}
+
+.link:hover{
+    color:red;
+}
+
+#glavni{
+    background-color: #feecef;
+}
+
+.blok{
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: rgb(172, 172, 84);
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.podnaslov{
+    color: #c8102e;
+}
+
+#podnozje{
+    padding: 15px;
+    background-color: #c8102e;
+    color: white;
+    text-align: center;
+}

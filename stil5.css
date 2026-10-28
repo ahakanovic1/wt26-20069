@@ -1,0 +1,28 @@
+body{
+    background-color: rgb(226, 226, 14);
+}
+
+p {
+   text-align: center;
+   margin: 5px;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th{
+    background-color: gray;
+    color: black;
+}
+
+tr{
+    background-color:  rgb(226, 226, 14);
+}
+
+td{
+    text-align: center;
+    border: 3px solid gray;
+    padding: 10px;
+}

@@ -1,0 +1,16 @@
+.unos_pod{
+    width: 30%;
+    float: left;
+    margin-left: 10px;
+    margin-bottom: 30px;
+    border: 2px solid black;
+    padding : 5px 10px 10px 15px;
+}
+
+.unos_pod h2{
+    margin-top: 5px;
+}
+
+#opcije{
+    display: inline;
+}
