@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="bs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Kazne za prekoračenje brzine</title>
+
+    <link rel="stylesheet" href="stil1.css">
+    <script src="zadatak1.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>SAOBRAĆAJNE KAZNE</h1>
+        <p>Provjerite kaznu za prekoračenje dozvoljene brzine</p>
+    </header>
+
+    <main>
+
+        <section class="slika">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnRlifcddSwIoZV7_EZrKzVK3k8j_0iTB7NleTeVoQqg&s=10" alt="Brza vožnja automobilom">
+            <div class="tekst-na-slici">
+                <h2>Brzina ima svoju cijenu!</h2>
+                <p>Poštujte ograničenja brzine i vozite sigurno.</p>
+            </div>
+        </section>
+
+        <section class="provjera">
+
+            <h2>Provjera kazne za vozača</h2>
+
+            <p>
+                Unesite za koliko ste kilometara na sat
+                prekoračili dozvoljenu brzinu.
+            </p>
+
+            <label for="brzina">Prekoračenje brzine (km/h):</label>
+
+            <input
+                type="number"
+                id="brzina"
+                placeholder="Npr. 25"
+                min="0"
+                step="1"
+            >
+
+            <button onclick="prikaziKaznu()">
+                Provjeri kaznu
+            </button>
+
+            <div id="rezultat">
+                Rezultati provjere bit će prikazani ovdje.
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Informativni prikaz saobraćajnih kazni</p>
+    </footer>
+
+</body>
+</html>
