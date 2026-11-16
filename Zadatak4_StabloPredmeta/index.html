@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interaktivno stablo predmeta</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="container">
+        <h1>Stablo predmeta</h1>
+        <p class="opis">Klikni na znak ili naziv godine da proširiš ili skupiš stablo.</p>
+
+        <section class="tree">
+            <div class="year">
+                <button class="toggle" type="button" aria-expanded="false"
+                        aria-controls="prvaGodina" data-target="prvaGodina">
+                    <span class="sign">+</span>
+                    <span>Prva godina</span>
+                </button>
+                <div class="subjects" id="prvaGodina">
+                    <div class="subject">IM1 – Inženjerska matematika 1</div>
+                    <div class="subject">IM2 – Inženjerska matematika 2</div>
+                    <div class="subject">OE – Osnove elektrotehnike</div>
+                    <div class="subject">EES – Električni i elektronski sistemi</div>
+                </div>
+            </div>
+
+            <div class="year">
+                <button class="toggle" type="button" aria-expanded="false"
+                        aria-controls="drugaGodina" data-target="drugaGodina">
+                    <span class="sign">+</span>
+                    <span>Druga godina</span>
+                </button>
+                <div class="subjects" id="drugaGodina">
+                    <div class="subject">TP – Tehnike programiranja</div>
+                    <div class="subject">ASP – Algoritmi i strukture podataka</div>
+                    <div class="subject">OIS – Osnove informacionih sistema</div>
+                    <div class="subject">WT – Web tehnologije</div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

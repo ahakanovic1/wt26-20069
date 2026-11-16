@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zapremina kugle</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="container">
+        <h1>Zapremina kugle</h1>
+        <p class="opis">Unesi poluprečnik kugle i izračunaj njenu zapreminu.</p>
+
+        <form id="forma">
+            <label for="radius">Radius (poluprečnik)</label>
+            <input type="number" id="radius" min="0" step="any"
+                   placeholder="Unesite poluprečnik">
+
+            <label for="volume">Volume (zapremina)</label>
+            <input type="text" id="volume" value="0.0000" readonly>
+
+            <p id="greska" class="greska" aria-live="polite"></p>
+
+            <div class="actions">
+                <button type="submit">Calculate</button>
+                <button type="reset" class="secondary">Reset</button>
+            </div>
+        </form>
+
+        <p class="formula">V = (4 / 3) × π × r³</p>
+    </main>
+</body>
+</html>

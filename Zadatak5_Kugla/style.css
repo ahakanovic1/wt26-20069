@@ -1,0 +1,42 @@
+* { box-sizing: border-box; }
+body {
+    margin: 0;
+    padding: 40px 16px;
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+}
+.container {
+    max-width: 460px;
+    margin: auto;
+    padding: 30px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0,0,0,.08);
+}
+h1 { text-align: center; }
+.opis { color: #64748b; text-align: center; margin-bottom: 25px; }
+form { display: flex; flex-direction: column; gap: 10px; }
+label { font-weight: bold; }
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+    font: inherit;
+}
+input[readonly] { background: #f1f5f9; }
+.actions { display: flex; gap: 10px; margin-top: 5px; }
+button {
+    flex: 1;
+    padding: 12px;
+    border: 0;
+    border-radius: 7px;
+    color: white;
+    background: #2563eb;
+    cursor: pointer;
+}
+button:hover { filter: brightness(.92); }
+button.secondary { background: #64748b; }
+.greska { min-height: 18px; margin: 0; color: #dc2626; }
+.formula { text-align: center; color: #475569; margin-top: 22px; font-size: 18px; }

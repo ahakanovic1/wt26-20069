@@ -1,0 +1,53 @@
+* { box-sizing: border-box; }
+body {
+    margin: 0;
+    padding: 40px 16px;
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+}
+.container {
+    max-width: 650px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0,0,0,.08);
+}
+h1 { text-align: center; }
+.opis { text-align: center; color: #64748b; margin-bottom: 28px; }
+.tree { max-width: 520px; margin: auto; }
+.year { margin: 12px 0; }
+.toggle {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    padding: 13px;
+    text-align: left;
+    font-size: 17px;
+    font-weight: bold;
+    color: #1e3a8a;
+    background: #dbeafe;
+    border: 1px solid #bfdbfe;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.toggle:hover { background: #bfdbfe; }
+.sign {
+    display: inline-flex;
+    width: 22px;
+    height: 22px;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border-radius: 4px;
+}
+.subjects {
+    display: none;
+    margin: 8px 0 15px 35px;
+    padding-left: 18px;
+    border-left: 2px solid #93c5fd;
+}
+.subject { padding: 9px 12px; margin: 5px 0; background: #f8fafc; border-radius: 6px; }
+.subject::before { content: "− "; color: #2563eb; font-weight: bold; }
