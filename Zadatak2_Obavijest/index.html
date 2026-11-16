@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forma za obavijest</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="container">
+        <h1>Kreiranje obavijesti</h1>
+
+        <section class="panel">
+            <h2>Unos obavijesti</h2>
+            <form id="forma">
+                <label for="naslov">Naslov</label>
+                <input type="text" id="naslov" placeholder="Unesite naslov">
+
+                <label for="tekst">Tekst obavijesti</label>
+                <textarea id="tekst" rows="5" placeholder="Unesite tekst obavijesti"></textarea>
+
+                <p class="label">Kategorija</p>
+                <label class="radio-label">
+                    <input type="radio" name="kategorija" value="Vazno">
+                    Važno
+                </label>
+                <label class="radio-label">
+                    <input type="radio" name="kategorija" value="Informativno">
+                    Informativno
+                </label>
+
+                <p id="greska" class="greska" aria-live="polite"></p>
+
+                <div class="actions">
+                    <button type="button" id="pregledDugme">Prikaži pregled</button>
+                    <button type="reset" class="secondary">Resetuj formu</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="panel">
+            <h2>Pregled obavijesti</h2>
+            <article id="pregled" class="preview">
+                <span id="prikazKategorije" class="category">Kategorija</span>
+                <h3 id="prikazNaslova">Naslov obavijesti</h3>
+                <p id="prikazTeksta">Ovdje će se prikazati tekst obavijesti.</p>
+            </article>
+        </section>
+    </main>
+</body>
+</html>

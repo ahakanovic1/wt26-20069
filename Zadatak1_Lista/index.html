@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="bs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Kontrolna lista</title>
+
+    <!-- Povezivanje CSS datoteke -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Povezivanje JavaScript datoteke -->
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Priprema za ispit</h1>
+
+        <p class="opis">
+            Označi aktivnosti koje si završio.
+        </p>
+
+        <!-- Broj završenih i ukupan broj stavki -->
+        <div class="statistika">
+            <span id="brojac">Završeno: 0 / 5</span>
+        </div>
+
+        <!-- Kontrolna lista -->
+        <ul id="lista">
+
+            <li class="stavka">
+                <span>Pročitati sva predavanja</span>
+                <button class="dugme">Označi</button>
+            </li>
+
+            <li class="stavka">
+                <span>Napraviti bilješke</span>
+                <button class="dugme">Označi</button>
+            </li>
+
+            <li class="stavka">
+                <span>Uraditi zadatke sa vježbi</span>
+                <button class="dugme">Označi</button>
+            </li>
+
+            <li class="stavka">
+                <span>Ponoviti najvažnije definicije</span>
+                <button class="dugme">Označi</button>
+            </li>
+
+            <li class="stavka">
+                <span>Riješiti probni ispit</span>
+                <button class="dugme">Označi</button>
+            </li>
+
+        </ul>
+
+        <!-- Dugme za resetovanje -->
+        <button id="reset">
+            Vrati na početno stanje
+        </button>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evidencija troškova</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="container">
+        <h1>Evidencija troškova</h1>
+        <section class="panel">
+            <h2>Dodavanje troška</h2>
+            <form id="forma">
+                <label for="naziv">Naziv troška</label>
+                <input type="text" id="naziv" placeholder="Npr. Hrana">
+                <label for="iznos">Iznos</label>
+                <input type="number" id="iznos" step="any" placeholder="Npr. 15.50">
+                <p id="greska" class="greska" aria-live="polite"></p>
+                <button type="submit">Dodaj u tabelu</button>
+            </form>
+        </section>
+        <section class="panel">
+            <div class="summary">
+                <h2>Pregled troškova</h2>
+                <span id="brojStavki">Broj stavki: 3</span>
+            </div>
+            <div class="table-wrapper">
+                <table id="tabela">
+                    <thead><tr><th>Naziv</th><th>Iznos</th></tr></thead>
+                    <tbody>
+                        <tr><td>Hrana</td><td>20.00</td></tr>
+                        <tr><td>Prevoz</td><td>10.00</td></tr>
+                        <tr><td>Knjige</td><td>30.00</td></tr>
+                        <tr id="redZbira"><th>Ukupno</th><th id="zbir">60.00</th></tr>
+                        <tr id="redProsjeka"><th>Prosjek</th><th id="prosjek">20.00</th></tr>
+                        <tr id="redMax"><th>Max element</th><th id="maxElement">30.00</th></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

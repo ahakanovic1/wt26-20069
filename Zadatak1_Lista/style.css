@@ -1,0 +1,137 @@
+
+/* Osnovni izgled stranice */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+    margin: 0;
+    padding: 40px 20px;
+}
+
+/* Glavni kontejner */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Naslov */
+h1 {
+    text-align: center;
+    color: #1e293b;
+    margin-bottom: 10px;
+}
+
+/* Opis */
+.opis {
+    text-align: center;
+    color: #64748b;
+    margin-bottom: 25px;
+}
+
+/* Statistika */
+.statistika {
+    background-color: #e0f2fe;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #0369a1;
+}
+
+/* Lista */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Pojedinačna stavka */
+.stavka {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 15px;
+    margin-bottom: 12px;
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    transition: 0.2s;
+}
+
+/* Završena stavka */
+.stavka.zavrseno {
+    background-color: #dcfce7;
+    border-color: #86efac;
+}
+
+/* Tekst završene stavke */
+.stavka.zavrseno span {
+    color: #15803d;
+    text-decoration: line-through;
+}
+
+/* Dugmad za promjenu stanja */
+.dugme {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 9px 13px;
+    border-radius: 6px;
+    cursor: pointer;
+    min-width: 100px;
+}
+
+.dugme:hover {
+    background-color: #1d4ed8;
+}
+
+/* Dugme završene stavke */
+.stavka.zavrseno .dugme {
+    background-color: #16a34a;
+}
+
+.stavka.zavrseno .dugme:hover {
+    background-color: #15803d;
+}
+
+/* Reset dugme */
+#reset {
+    width: 100%;
+    padding: 13px;
+    margin-top: 15px;
+    background-color: #dc2626;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#reset:hover {
+    background-color: #b91c1c;
+}
+
+@media (max-width: 480px) {
+
+    .container {
+        padding: 20px;
+    }
+
+    .stavka {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .dugme {
+        width: 100%;
+    }
+}

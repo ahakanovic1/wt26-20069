@@ -1,0 +1,91 @@
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    padding: 35px 16px;
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+}
+
+.container { max-width: 760px; margin: auto; }
+h1 { text-align: center; }
+
+.panel {
+    background: white;
+    padding: 24px;
+    margin: 20px 0;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0,0,0,.07);
+}
+
+form { display: flex; flex-direction: column; gap: 9px; }
+
+input {
+    padding: 11px;
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+    font: inherit;
+}
+
+button {
+    padding: 11px 15px;
+    border: 0;
+    border-radius: 7px;
+    background: #2563eb;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover { background: #1d4ed8; }
+.greska { color: #dc2626; min-height: 18px; margin: 0; }
+
+.summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.summary h2 { margin-top: 0; }
+#brojStavki { color: #0369a1; font-weight: bold; }
+.table-wrapper { overflow-x: auto; }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    padding: 13px;
+    border: 1px solid #cbd5e1;
+    text-align: left;
+}
+
+thead { background: #e2e8f0; }
+#redZbira { background: #dcfce7; }
+#redZbira th { font-weight: bold; }
+
+@media (max-width: 500px) {
+    .panel { padding: 17px; }
+}
+
+#redZbira {
+    background: #dcfce7;
+}
+
+#redProsjeka {
+    background: #dbeafe;
+}
+
+#redMax {
+    background: #fef3c7;
+}
+
+#redZbira th,
+#redProsjeka th,
+#redMax th {
+    font-weight: bold;
+}

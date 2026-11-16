@@ -1,0 +1,62 @@
+* { box-sizing: border-box; }
+body {
+    margin: 0;
+    padding: 35px 16px;
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+}
+.container { max-width: 850px; margin: auto; }
+h1 { text-align: center; margin-bottom: 25px; }
+.panel {
+    background: white;
+    padding: 24px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0,0,0,.07);
+}
+h2 { margin-top: 0; }
+form { display: flex; flex-direction: column; gap: 9px; }
+input[type="text"], textarea {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+    font: inherit;
+}
+textarea { resize: vertical; }
+.label { margin: 8px 0 0; font-weight: bold; }
+.radio-label { display: flex; align-items: center; gap: 8px; }
+.actions { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 8px; }
+button {
+    border: 0;
+    border-radius: 7px;
+    padding: 11px 16px;
+    color: white;
+    background: #2563eb;
+    cursor: pointer;
+}
+button:hover { filter: brightness(.92); }
+button.secondary { background: #64748b; }
+.greska { color: #dc2626; min-height: 18px; margin: 2px 0; }
+.preview {
+    border-left: 5px solid #64748b;
+    background: #f8fafc;
+    padding: 18px;
+    border-radius: 8px;
+    min-height: 130px;
+}
+.preview.vazno { border-left-color: #dc2626; background: #fef2f2; }
+.preview.informativno { border-left-color: #0284c7; background: #f0f9ff; }
+.category {
+    display: inline-block;
+    padding: 5px 9px;
+    border-radius: 20px;
+    background: #e2e8f0;
+    font-size: 12px;
+    font-weight: bold;
+}
+@media (max-width: 500px) {
+    .panel { padding: 17px; }
+    .actions button { width: 100%; }
+}
